@@ -1,5 +1,5 @@
 ---
-Checks: 'clang-analyzer-*,bugprone-*,-clang-analyzer-security.*'
+Checks: 'clang-analyzer-*,bugprone-*,readability-non-const-parameter,misc-const-correctness,-clang-analyzer-security.*,-bugprone-easily-swappable-parameters'
 WarningsAsErrors: ''
 HeaderFilterRegex: ''
 AnalyzeTemporaryDtors: false

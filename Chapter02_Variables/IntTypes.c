@@ -13,8 +13,8 @@ int main()
     int16_t c2 = 0;
     int8_t d2 = 0;
 
-    printf("%lu", a1);
-    printf("%ld", a2);
+    printf("%llu", a1);
+    printf("%lld", a2);
 
     printf("%u", b1);
     printf("%d", b2);

@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdio.h>
 
 int main()
@@ -5,7 +6,8 @@ int main()
     int a = 22;
     int b = 42;
 
-    _Bool comparison;
+    // boolean: true false
+    bool comparison = false;
 
     // a greater than b
     comparison = a > b;

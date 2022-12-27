@@ -2,15 +2,16 @@
 
 int main()
 {
-    int age_jan = 27;
+    int age_jan = 28;
+    int mod = 2;
 
-    if ((age_jan % 2) == 0)
+    if ((age_jan % mod) == 0)
     {
-        printf("Jan's age is even\n");
+        printf("Jan's age is div. by %d\n", mod);
     }
     else
     {
-        printf("Jan's age is odd\n");
+        printf("Jan's age is not div. by %d\n", mod);
     }
 
     return 0;

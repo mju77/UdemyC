@@ -2,14 +2,14 @@
 
 int main()
 {
-    int a = 9;
-    int b = 2;
+    int a = 19;
+    int b = 4;
 
-    int division = a / b;
-    int remainder = a % b;
+    int d = a / b;
+    int r = a - (d * b);
 
-    printf("a / b = %d\n", division);
-    printf("a %% b = %d\n", remainder);
+    printf("a mod b = %d\n", r);
+    printf("a mod b = %d\n", a % b);
 
     return 0;
 }

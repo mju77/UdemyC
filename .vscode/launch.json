@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "console": "externalTerminal",
-      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter16_CSV",
-      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter16_CSV/build/Debug/outDebug"
+      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter03_ControlFlow",
+      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter03_ControlFlow/build/Debug/outDebug"
     }
   ]
 }
