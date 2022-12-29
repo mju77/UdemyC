@@ -1,41 +1,53 @@
 #include <stdio.h>
 
+enum Beverage
+{
+    NO_BEVERAGE,
+    WATER,
+    COLA,
+    FANTA,
+    SPRITE,
+    COFFEE,
+};
+
 int main()
 {
-    int cola = 0;
-    int icetea = 1;
-    int water = 2;
-    int coffee = 3;
+    enum Beverage selected_beverage = NO_BEVERAGE;
+    printf("Select a beverage:\nWater (1), Cola (2), Fanta (3)\nSprite (4), "
+           "Coffee (5)\n");
+    scanf("%d", &selected_beverage);
 
-    int selection;
-    printf("Please enter a valid drink: ");
-    scanf("%d", &selection);
-
-    switch (selection)
+    switch (selected_beverage)
     {
-    case 0:
+    case WATER:
     {
-        printf("You chose a Cola!");
+        printf("You selected a water\n");
         break;
     }
-    case 1:
+    case COLA:
     {
-        printf("You chose an Icetea!");
+        printf("You selected a Cola\n");
         break;
     }
-    case 2:
+    case FANTA:
     {
-        printf("You chose a Water!");
+        printf("You selected a Fanta\n");
         break;
     }
-    case 3:
+    case SPRITE:
     {
-        printf("You chose a Coffee!");
+        printf("You selected a Sprite\n");
+        break;
+    }
+    case COFFEE:
+    {
+        printf("You selected a Coffee\n");
         break;
     }
     default:
     {
-        printf("You did not enter a valid drink!");
+        printf("You selected an invalid Beverage!\n");
+        break;
     }
     }
 

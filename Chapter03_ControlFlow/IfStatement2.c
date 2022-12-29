@@ -1,30 +1,31 @@
+#include <stdbool.h>
 #include <stdio.h>
 
 int main()
 {
-    int age_jan = 26;
-    int age_marc = 26;
-    int age_sarah = 30;
+    int age_sarah = 28;
+    int age_jan = 28;
+    int age_marc = 28;
 
-    // &&: Conjunction, logical AND operator
-    // ||: Disjunction, logical OR operator
-    // !: Negation, logical NOT operator
+    bool is_jan_the_youngest = (age_jan < age_marc) && (age_jan < age_sarah);
+    bool is_marc_the_youngest = (age_marc < age_jan) && (age_marc < age_sarah);
+    bool is_sarah_the_youngest = (age_sarah < age_jan) && (age_sarah < age_marc);
 
-    if ((age_jan < age_marc) && (age_jan < age_sarah))
+    if (is_jan_the_youngest)
     {
-        printf("Jan is the youngest!");
+        printf("Jan is the youngest person in the room.\n");
     }
-    else if ((age_marc < age_jan) && (age_marc < age_sarah))
+    else if (is_marc_the_youngest)
     {
-        printf("Marc is the youngest!");
+        printf("Marc is the youngest person in the room.\n");
     }
-    else if ((age_sarah < age_marc) && (age_sarah < age_jan))
+    else if (is_sarah_the_youngest)
     {
-        printf("Sarah is the youngest!");
+        printf("Sarah is the youngest person in the room.\n");
     }
     else
     {
-        printf("At least two persons have the same age!");
+        printf("All have the same age.\n");
     }
 
     return 0;
