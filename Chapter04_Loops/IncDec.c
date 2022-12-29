@@ -2,18 +2,19 @@
 
 int main()
 {
-    int a = 1;
-
     // Increment: a = a + 1 <=> a += 1 <=> a++
     // Decrement: a = a - 1 <=> a -= 1 <=> a--
 
-    printf("%d\n", a);
-    a++;
-    // ++a,
-    printf("%d\n", a);
-    a--;
-    // --a;
-    printf("%d\n", a);
+    int i = 0;
+    i = i + 1; // 1
+    i += 1;    // 2
+    i++;       // 3
+    printf("%d\n", i);
+
+    i = i - 1; // 2
+    i -= 1;    // 1
+    i--;       // 0
+    printf("%d\n", i);
 
     return 0;
 }
