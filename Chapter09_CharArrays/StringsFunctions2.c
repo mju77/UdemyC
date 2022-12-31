@@ -46,13 +46,13 @@ int main()
         printf("%s\n", friends[i]);
     }
 
-    long unsigned int length0 = strlen(friends[0]);
-    long unsigned int length1 = strlen(friends[1]);
-    long unsigned int length2 = strlen(friends[2]);
+    size_t length0 = strlen(friends[0]);
+    size_t length1 = strlen(friends[1]);
+    size_t length2 = strlen(friends[2]);
 
-    printf("%lu\n", length0);
-    printf("%lu\n", length1);
-    printf("%lu\n", length2);
+    printf("%llu\n", length0);
+    printf("%llu\n", length1);
+    printf("%llu\n", length2);
 
     int compare0 = strncmp(friends[0], friends[1], 20);
     int compare1 = strncmp(friends[0], friends[2], 20);
