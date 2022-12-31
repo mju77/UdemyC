@@ -35,7 +35,7 @@ float meanVector(Vector *vector)
 {
     if (NULL == vector || vector->data == NULL)
     {
-        return 0.0f;
+        return 0.;
     }
 
     int sum = 0;
@@ -52,7 +52,7 @@ int minVector(Vector *vector)
 {
     if (NULL == vector || vector->data == NULL)
     {
-        return 0.0f;
+        return 0;
     }
 
     if (vector->length == 0)
@@ -77,7 +77,7 @@ int maxVector(Vector *vector)
 {
     if (NULL == vector || vector->data == NULL)
     {
-        return 0.0f;
+        return 0;
     }
 
     if (vector->length == 0)

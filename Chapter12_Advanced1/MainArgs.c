@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     int value = atoi(argv[1]);
     printf("%d\n", value);
 
-    float val2 = atof(argv[2]);
+    float val2 = (float)atof(argv[2]);
     printf("%f\n", val2);
 
     double val3;

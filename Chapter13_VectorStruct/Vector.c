@@ -66,7 +66,7 @@ Vector *freeVector(Vector *vector)
         return NULL;
     }
 
-    if (vector->NULL != data)
+    if (vector->data != NULL)
     {
         free(vector->data);
         vector->data = NULL;

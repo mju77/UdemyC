@@ -5,7 +5,7 @@ void do_something()
 {
     volatile double value = 0.0;
 
-    for (unsigned int i = 0; i < 10000; i++)
+    for (unsigned int i = 0; i < 10000000; i++)
     {
         value += i;
     }
