@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "console": "externalTerminal",
-      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter06_Pointers/PointerIntro",
-      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter06_Pointers/PointerIntro/build/Debug/outDebug"
+      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter06_Pointers",
+      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter06_Pointers/build/Debug/outDebug"
     }
   ]
 }
