@@ -1,3 +1,4 @@
+#include <float.h>
 #include <stdint.h>
 #include <stdio.h>
 
@@ -5,6 +6,11 @@
 
 float meanArray(int *array, unsigned int length)
 {
+    if (length == 0 || array == NULL)
+    {
+        return FLT_MAX;
+    }
+
     int sum = 0;
 
     for (unsigned int i = 0; i < length; i++)
@@ -17,7 +23,7 @@ float meanArray(int *array, unsigned int length)
 
 int minArray(int *array, unsigned int length)
 {
-    if (length == 0)
+    if (length == 0 || array == NULL)
     {
         return INT32_MIN;
     }
@@ -37,7 +43,7 @@ int minArray(int *array, unsigned int length)
 
 int maxArray(int *array, unsigned int length)
 {
-    if (length == 0)
+    if (length == 0 || array == NULL)
     {
         return INT32_MIN;
     }
