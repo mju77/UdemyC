@@ -3,7 +3,7 @@
 int main()
 {
     double a = 1337.23;
-    float b = (float)(a);
+    float b = (float)a;
 
     printf("%.16lf\n", a);
     printf("%.16f\n", b);
