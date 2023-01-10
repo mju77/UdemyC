@@ -24,9 +24,8 @@ int main()
     *p_e = *p_d + *p_f;
 
     printf("%d\n", a);
-    printf("%d\n", *p_d);
-    printf("%d\n", *p_e);
-    printf("%d\n", *p_f);
+    printf("%d\n", b);
+    printf("%d\n", c);
 
     return 0;
 }
