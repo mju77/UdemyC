@@ -5,6 +5,7 @@ int main()
 {
     float vector1[3] = {0.0f, 0.0f, 0.0f};
     float vector2[3] = {0.0f, 0.0f, 0.0f};
+    float result[3] = {0.0f, 0.0f, 0.0f};
 
     for (uint32_t i = 0; i < 3; ++i)
     {
@@ -32,7 +33,12 @@ int main()
 
     for (uint32_t i = 0; i < 3; ++i)
     {
-        printf("v1[%d] + v2[%d] = %f\n", i, i, vector1[i] + vector2[i]);
+        result[i] = vector1[i] + vector2[i];
+    }
+
+    for (uint32_t i = 0; i < 3; ++i)
+    {
+        printf("v1[%d] + v2[%d] = %f\n", i, i, result[i]);
     }
 
     return 0;
