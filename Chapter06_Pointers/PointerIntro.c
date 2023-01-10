@@ -2,14 +2,13 @@
 
 int main()
 {
-    int my_value = 1337;
-    printf("Value of my_value: %d\n", my_value);
-    printf("Memory address of my_value: %p\n", &my_value);
+    int v = 1337;
+    printf("v mem addr: %p\n", &v); // &variable => mem addr.
 
-    int *my_pointer = &my_value;
-    printf("Value of my_pointer: %p\n", my_pointer);
-    printf("Value of the reference of my_pointer: %d\n", *my_pointer);
-    printf("Memory address of my_pointer: %p\n", &my_pointer);
+    int *p = &v; // pointer variable
+    printf("p value: %p\n", p);
+    printf("p mem addr: %p\n", &p);
+    printf("p deref: %d\n", *p);
 
     return 0;
 }

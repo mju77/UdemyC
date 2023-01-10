@@ -35,7 +35,8 @@
     ".clang*": "yaml",
     "*.gpj": "jsonc",
     "*.gvw": "jsonc",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "stdio.h": "c"
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,

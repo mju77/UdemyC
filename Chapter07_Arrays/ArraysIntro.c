@@ -2,30 +2,25 @@
 
 int main()
 {
-    int numbers[4];
+    int numbers[4]; // array with length 4
 
-    for (int i = 0; i < 4; i++)
+    // index is an unsigned integer
+    // Index Set = {0, 1, 2, 3}
+    for (unsigned int i = 0; i < 4; i++)
     {
-        numbers[i] = 1337;
+        numbers[i] = 1337; // left of =: write
     }
 
-    for (int i = 0; i < 4; i++)
+    for (unsigned int i = 0; i < 4; i++)
     {
-        printf("numbers[%d] = %d\n", i, numbers[i]);
+        printf("%d\n", numbers[i]); // read
     }
 
-    int numbers2[4] = {13, 12, 11, 10};
+    int numbers2[5] = {13, 24, 35, 46, 57};
 
-    for (int i = 0; i < 4; i++)
+    for (unsigned int i = 0; i < 5; i++)
     {
-        printf("numbers2[%d] = %d\n", i, numbers2[i]);
-    }
-
-    int numbers3[4] = {13, 12, 11};
-
-    for (int i = 0; i < 4; i++)
-    {
-        printf("numbers3[%d] = %d\n", i, numbers3[i]);
+        printf("%d\n", numbers2[i]); // read
     }
 
     return 0;

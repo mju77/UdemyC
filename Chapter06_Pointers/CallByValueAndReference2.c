@@ -1,31 +1,33 @@
 #include <stdio.h>
 
-// Call by Value
-float add(float val_add)
+// call by value
+float add1(float v)
 {
-    printf("Memory address of val_add: %p\n", &val_add);
+    printf("mem addr of v: %p\n", &v);
 
-    val_add = val_add + 1.0f;
-    return val_add;
+    v = v + 1.0f;
+    return v;
 }
 
-void sub(float *val_sub)
+// call by reference
+void add2(float *v)
 {
-    printf("Memory address of val_sub: %p\n", &val_sub);
+    printf("mem addr of v: %p\n", v);
 
-    *val_sub = *val_sub - 1.0f;
+    *v = *v + 1.0f; // dereference
 }
 
 int main()
 {
-    float val_main = 0.0f;
-    printf("Memory address of val_main: %p\n", &val_main);
+    float v_main = 0.0f;
+    printf("mem addr of v_main: %p\n", &v_main);
 
-    printf("%f\n", val_main);
-    val_main = add(val_main);
-    printf("%f\n", val_main);
-    sub(&val_main);
-    printf("%f\n", val_main);
+    printf("%f\n", v_main);
+    v_main = add1(v_main);
+    printf("%f\n", v_main);
+
+    add2(&v_main);
+    printf("%f\n", v_main);
 
     return 0;
 }
