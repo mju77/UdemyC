@@ -1,19 +1,17 @@
 DEBUG_FLAGS = -g3 -O0
 RELEASE_FLAGS = -DNDEBUG -O3
+COMPILER = gcc
 
 FLAGS = $(RELEASE_FLAGS)
 
 preprocess:
-	gcc $(FLAGS) -E IfStatement.c > Temp.c
+	$(COMPILER) $(FLAGS) -E main.c > Temp.c
 
 assemble:
-	gcc $(FLAGS) -S IfStatement.c
+	$(COMPILER) $(FLAGS) -S main.c
 
 compile:
-	gcc $(FLAGS) -c IfStatement.c -o IfStatement.o
+	$(COMPILER) $(FLAGS) -c main.c -o main.o
 
 build:
-	gcc $(FLAGS) IfStatement.o -o IfStatement
-
-print_exe:
-	objdump -CS IfStatement
+	$(COMPILER) $(FLAGS) main.o -o main
