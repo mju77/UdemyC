@@ -23,6 +23,7 @@ int main()
 
     *p_e = *p_d + *p_f;
 
+    // Check what the output is, without running this file!
     printf("%d\n", a);
     printf("%d\n", b);
     printf("%d\n", c);

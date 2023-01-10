@@ -3,20 +3,17 @@
 
 int main()
 {
-    int *a = (int *)malloc(sizeof(int));
+    int a = 42;
     int b = 1337;
     int c = -10;
     int *array = (int *)malloc(3 * sizeof(int));
 
-    *a = b;
-    array[0] = b;
-    array[1] = c;
-    array[2] = *a;
+    array[0] = a;
+    array[1] = b;
+    array[2] = c;
 
     free(array);
     array = NULL;
-    free(a);
-    a = NULL;
 
     return 0;
 }
