@@ -5,15 +5,11 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppvsdbg",
       "request": "launch",
-      "args": [
-        "1337",
-        "42.5",
-        "12.3"
-      ],
+      "args": [],
       "stopAtEntry": false,
       "console": "externalTerminal",
-      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter12_Advanced1",
-      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter12_Advanced1/build/Debug/outDebug"
+      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/Struct_Padding",
+      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/Struct_Padding/build/Debug/outDebug"
     }
   ]
 }
