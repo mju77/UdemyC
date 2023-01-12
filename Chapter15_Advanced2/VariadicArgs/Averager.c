@@ -10,8 +10,8 @@ double average(int count, ...)
 
     for (int i = 0; i < count; i++)
     {
-        double temp = va_arg(args, double);
-        sum += temp;
+        double val = va_arg(args, double);
+        sum += val;
     }
 
     va_end(args);
@@ -22,7 +22,6 @@ double average(int count, ...)
 int main()
 {
     double avg = average(3, 1.0, 2.0, 3.0);
-
     printf("%lf\n", avg);
 
     return 0;

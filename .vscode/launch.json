@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "console": "externalTerminal",
-      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/Struct_Padding",
-      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/Struct_Padding/build/Debug/outDebug"
+      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/VariadicArgs",
+      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/VariadicArgs/build/Debug/outDebug"
     }
   ]
 }
