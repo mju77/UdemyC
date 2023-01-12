@@ -1,15 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// argc = Argument Counter
+// argv = Argument Values
 int main(int argc, char *argv[])
 {
-    // argc = Argument Counter
-    // argv = Argument Values
     printf("argc: %d\n", argc);
 
     for (int i = 0; i < argc; i++)
     {
         printf("argv[%d] = %s\n", i, argv[i]);
+    }
+
+    if (argc < 2)
+    {
+        return 1;
     }
 
     int value = atoi(argv[1]);
