@@ -5,7 +5,11 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppvsdbg",
       "request": "launch",
-      "args": [],
+      "args": [
+        "1337",
+        "42.5",
+        "12.3"
+      ],
       "stopAtEntry": false,
       "console": "externalTerminal",
       "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter12_Advanced1",

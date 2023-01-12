@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     printf("%f\n", val2);
 
     double val3;
-    sscanf(argv[3], "%lf", &val3);
+    sscanf(argv[3], "value=%lf", &val3);
     printf("%lf\n", val3);
 
     return 0;
