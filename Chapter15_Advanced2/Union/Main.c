@@ -19,12 +19,10 @@ int main()
     printf("%llu Byte\n", sizeof(ds));
 
     data_union_t du;
-    du.id = 1;        // 0b101010101
-    du.val = 1337.0f; // 0b101010101
     printf("%llu Byte\n", sizeof(du));
-
-    printf("%d\n", du.id);
+    du.val = 42.5f; // 01000010001010100000000000000000
     printf("%f\n", du.val);
+    printf("%d\n", du.id); // 1110048768
 
     return 0;
 }
