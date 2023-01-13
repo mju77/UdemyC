@@ -5,7 +5,25 @@ void count_threshold_elements(float *array,
                               uint32_t length,
                               float threshold,
                               uint32_t *num_below,
-                              uint32_t *num_above);
+                              uint32_t *num_above)
+{
+    if (NULL == array || length == 0)
+    {
+        return;
+    }
+
+    for (uint32_t i = 0; i < length; i++)
+    {
+        if (array[i] < threshold)
+        {
+            (*num_below)++;
+        }
+        else if (array[i] > threshold)
+        {
+            (*num_above)++;
+        }
+    }
+}
 
 int main()
 {
@@ -19,7 +37,7 @@ int main()
 
     printf("Threshold is: %f\n", threshold);
     printf("Num Below: %u\n", num_below);
-    printf("Num Above: %u\n", num_below);
+    printf("Num Above: %u\n", num_above);
 
     return 0;
 }

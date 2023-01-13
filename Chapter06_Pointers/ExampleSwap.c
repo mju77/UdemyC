@@ -2,9 +2,8 @@
 
 void swap(int *x, int *y)
 {
+    int temp = *x;
 
-    int temp;
-    temp = *x;
     *x = *y;
     *y = temp;
 }
@@ -15,11 +14,16 @@ int main()
     int b = 2;
 
     swap(&a, &b);
+    printf("%d\n", a);
+    printf("%d\n", b);
 
     int *c = &a;
     int *d = &b;
 
     swap(c, d);
+    printf("%d\n", a);
+    printf("%d\n", b);
+
 
     return 0;
 }
