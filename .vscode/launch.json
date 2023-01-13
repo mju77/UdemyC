@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "console": "externalTerminal",
-      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter07_Arrays",
-      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter07_Arrays/build/Debug/outDebug"
+      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter10_Structs",
+      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter10_Structs/build/Debug/outDebug"
     }
   ]
 }
