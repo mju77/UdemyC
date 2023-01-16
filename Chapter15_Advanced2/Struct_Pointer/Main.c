@@ -16,15 +16,15 @@ int main()
     s_user_data user_data_jan = {"Jan Schaffranek"};
     s_account account_jan = {2402, &user_data_jan};
 
-    s_user_data user_data_peter = {"Peter Polkow"};
-    s_account account_peter = {.user_data = &user_data_peter, .ID = 1337};
+    s_account *account_jan_p = &account_jan;
 
     printf("User id %d with name %s\n",
            account_jan.ID,
            account_jan.user_data->name);
+
     printf("User id %d with name %s\n",
-           account_peter.ID,
-           account_peter.user_data->name);
+           account_jan_p->ID,
+           account_jan_p->user_data->name);
 
     return 0;
 }

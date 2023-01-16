@@ -1,9 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
 
-// brand
-// model
-// year
 struct Car
 {
     char brand[50];
