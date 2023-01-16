@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "console": "externalTerminal",
-      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/Union",
-      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/Union/build/Debug/outDebug"
+      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/VariadicArgs",
+      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/VariadicArgs/build/Debug/outDebug"
     }
   ]
 }

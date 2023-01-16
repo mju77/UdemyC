@@ -10,19 +10,16 @@ void my_printf(char *format, ...)
     {
         if (*format == '%')
         {
-            format++;
-            if (*format == '%')
+            ++format;
+
+            if (*format == 'c')
             {
-                putchar('%');
-            }
-            else if (*format == 'c')
-            {
-                char value = va_arg(args, int);
+                char value = (char)va_arg(args, int);
                 putchar(value);
             }
             else
             {
-                /* do nothing. */
+                putchar(*format);
             }
         }
         else
@@ -30,15 +27,16 @@ void my_printf(char *format, ...)
             putchar(*format);
         }
 
-        format++;
+        ++format;
     }
 
     va_end(args);
 }
 
-int main(void)
+int main()
 {
-    my_printf("%c --- %c\n", 'a', 'b');
+    printf("%c --- %c - %c - %d\n", 'a', 'z', 'b', 3);
+    my_printf("%c --- %c - %c - %d\n", 'a', 'z', 'b', 3);
 
     return 0;
 }
