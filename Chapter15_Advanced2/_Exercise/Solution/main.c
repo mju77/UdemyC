@@ -28,7 +28,7 @@ void my_printf(char *format, ...)
                 int value = va_arg(args, int);
                 char buffer[48];
                 memset(buffer, '\0', 48);
-                sprintf(buffer, "%d", value);
+                snprintf(buffer, 48, "%d", value);
                 fputs(buffer, stdout);
             }
             else if (*format == 'f')
@@ -36,7 +36,7 @@ void my_printf(char *format, ...)
                 float value = (float)va_arg(args, double);
                 char buffer[64];
                 memset(buffer, '\0', 64);
-                sprintf(buffer, "%.16f", value);
+                snprintf(buffer, 64, "%.16f", value);
                 fputs(buffer, stdout);
             }
             else if (*format == 'l' && *(++format) == 'f')
@@ -44,7 +44,7 @@ void my_printf(char *format, ...)
                 double value = va_arg(args, double);
                 char buffer[64];
                 memset(buffer, '\0', 64);
-                sprintf(buffer, "%.16lf", value);
+                snprintf(buffer, 64, "%.16lf", value);
                 fputs(buffer, stdout);
             }
             else
