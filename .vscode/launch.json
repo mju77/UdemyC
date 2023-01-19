@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "console": "externalTerminal",
-      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/_Exercise/Solution",
-      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter15_Advanced2/_Exercise/Solution/build/Debug/outDebug"
+      "cwd": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter13_VectorStruct",
+      "program": "c:/Users/Jan/OneDrive/_Coding/UdemyC/Chapter13_VectorStruct/build/Debug/outDebug"
     }
   ]
 }
