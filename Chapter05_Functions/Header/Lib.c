@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include "Lib.h"
-
 int getNumberFromUser()
 {
     int number_from_user;

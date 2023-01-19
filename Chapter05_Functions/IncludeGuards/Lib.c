@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 #include "Lib.h"
-#include "Types.h"
 
-int function()
+int getNumberFromUser()
 {
-    return 1;
+    int number_from_user;
+
+    printf("Please enter an integer number: ");
+    scanf("%d", &number_from_user);
+
+    return number_from_user;
 }

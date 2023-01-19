@@ -11,3 +11,15 @@ int getNumberFromUser()
 
     return number_from_user; // return 12;
 }
+
+int max(int number_a, int number_b)
+{
+}
+
+int min(int number_a, int number_b)
+{
+}
+
+float mean(int number_a, int number_b)
+{
+}
