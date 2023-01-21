@@ -16,6 +16,5 @@ int main()
     printf("Min{%d, %d} = %d\n", a, b, number_min);
     printf("Mean[%d, %d] = %f\n", a, b, number_mean);
 
-    getchar();
     return 0;
 }
