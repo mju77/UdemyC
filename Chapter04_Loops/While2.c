@@ -1,21 +1,32 @@
+#include <stdbool.h>
 #include <stdio.h>
+
+// break: end the loop
+// continue: end the current iteration
 
 int main()
 {
-    int num_iterations = 3;
-    int i = 0;
+    float user_input;
+    float sum = 0.0f;
 
-    while (1)
+    while (true)
     {
-        printf("Hello World!\n");
+        scanf("%f", &user_input);
 
-        i++;
+        if (user_input > 10.0)
+        {
+            continue;
+        }
 
-        if (i >= num_iterations)
+        if (user_input < 0.0)
         {
             break;
         }
+
+        sum += user_input;
     }
+
+    printf("sum: %f\n", sum);
 
     return 0;
 }
