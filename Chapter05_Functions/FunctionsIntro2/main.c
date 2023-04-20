@@ -16,7 +16,7 @@ int getNumberFromUser()
 {
     int number = 0;
 
-    printf("Please enter an integer number: ");
+    printf("Please enter an integer number : ");
     scanf("%d", &number);
 
     return number;
