@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+void binom(int a, int b, int *c)
+{
+    *c = (a + b) * (a + b);
+}
+
 int main()
 {
     int a = 4;
